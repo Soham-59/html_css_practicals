@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main_container{
+    margin: 20px;
+}
+/* navbar parent container  */
+.container{
+    height: 1024px;
+    width: 1440px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/24ad/60ba/457190ca0429aadc4516c4193d671002?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QmHGAPZEGzfxcq3pVEVoEQzgnjgAcDP5L00Y02g-5PqVmiDyw92I1Efk0ZlSQmLpLui7pVwRNYba53DDzwtnCj5o9UHaZuB00r44KMrFBx8Y6FGYdNZPfHCujWXPSq30wyFRlUASLiUavCpBSnSkOebeoR0RRLvR6xXbGKsbE-lnvcRBhkULkGXygD2lN7IJqHroBuXx5jcnK8d4RXTelTggnjLyejWaTetkIp7vk-kr~jJJJv~T3BG52LRgU-NtfhqyoMuFoQAnCuNfEJIbzYN0WdhTc3PiynyCIZNa2LCYXDw32sN7ZDtIlDzHTB0q3JQF-WQIeqvKzV3DSoTu2g__");
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top:20px;
+}
+
+/* navbar */
+.navbar{
+    width: 1440px;
+    height: 144px;
+    background-color:#A9C7CB;
+    box-sizing: border-box;
+}
+/* codex logo styling */
+#header{
+    height: 58px;
+    margin-left: 48px;
+    margin-top: 48px;
+    display: inline-block;
+    font-size: 30px;
+}
+.flex_container{
+    /* background-color: yellow; */
+    padding-left:768px;
+    display: inline-block;
+}
+a{
+    height: 58px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-left: 64px;
+}
+
+h1{
+    width: 586px;
+    height: 154px;
+    font-size: 70px;
+    /* background-color: yellow; */
+    margin-left: 121px;
+    margin-top: 712px;
+    
+}
