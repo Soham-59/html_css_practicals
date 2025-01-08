@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    /* background-color:aqua; */
+    width: 100vw;
+    /* background-color: black; */
+    
+}
+.first{
+    background: linear-gradient( to  top, #0B1D2600,#0B1D26);
+    /* background-color: red; */
+}
+#img1{
+    display: block;
+    width:100vw ;
+    height: 740px;
+    
+}
+#img2{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: 576px;
+}
+.navbar{
+    /* background-color: yellow; */
+    box-sizing: border-box;
+    padding: 30px 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.ul1{
+    display: flex;
+    gap: 20px;
+}
+.li1{
+    list-style: none;
+    padding: 20px 20px ;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav_btn{
+    display: flex;
+    gap: 20px;
+}
+.btn1{
+    color: white;
+}
+#p1{
+    color: #FBD784;
+}
+#h1_1{
+    width: 70vw;
+    font-family: Chronicle Display;
+font-size: 88px;
+font-weight: 600;
+line-height: 100px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: white;
+
+}
+.box1{
+    margin-top: 120px;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    align-items: center;
+    
+}
+
+.side_logo{
+    display: flex;
+    color: white;
+    gap: 20px;
+    /* background-color: yellow; */
+    position: relative;
+    left: -131px;
+    transform: rotate(90deg);
+}
+.side_logo:hover{
+    position: relative;
+    left: 0px;
+    transition: all 3s;
+}
+.header_txt{
+    box-sizing: border-box;
+    padding: 20px 40px;
+    /* background-color: aqua; */
+}
+.start{
+    color: white;
+    text-align: center;
+}
+.li2{
+    list-style: none;
+    color: white;
+    padding: 10px 20px;
+}
+.ul2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bar{
+    border-left: 2px solid white;
+    height: 193px;
+}
+
+.right{
+    display: flex;
+    gap: 30px;
+}
+.second{
+    box-shadow: 10px -17px 97px 97px rgb(0, 0, 0);
+
+    /* background-color: yellow; */
+    position: relative;
+    box-sizing: border-box;
+padding: 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    background-color: black;
+    color: white;
+    z-index: 10;
+}
+#h2_1{
+    width: 555px;
+height: 154px;
+    font-family: Chronicle Display;
+font-size: 64px;
+font-weight: 600;
+line-height: 76.8px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.card_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+}
+#number{
+    font-weight: 900;
+    font-size: 100px;
+    position: absolute;
+        font-size: 126px;
+        position: absolute;
+        top: 226px;
+        left: 50px;
+        color: #ffffff36;
+        z-index: -200;
+}
+#number:hover{
+    transform: scale(1.5,1.5);
+}
+#p2{
+    width: 632px;
+height: 160px;
+font-size: 20px;
+}
+#read_more{
+    color: #FBD784;
+    font-size: 20px;
+}
+.three{
+  /* background-color: yellow; */
+  position: relative;
+  box-sizing: border-box;
+padding: 100px 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+    flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  z-index: 10;
+}
+#number2{
+        font-weight: 900;
+        font-size: 100px;
+        position: absolute;
+        font-size: 126px;
+        position: absolute;
+        top:219px;
+        left: 743px;
+        color: #ffffff36;
+        z-index: -200;
+}
+#number2:hover{
+    transform: scale(1.5,1.5);
+}
+.four{
+    /* background-color: yellow; */
+    /* background-color: yellow; */
+    position: relative;
+    box-sizing: border-box;
+padding: 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    background-color: black;
+    color: white;
+    z-index: 10;
+  }
+  /* footer */
+  .footer{
+    box-sizing: border-box;
+    background-color: black;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  #anchor2{
+    color: white;
+  }
+  .ul_3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .li_3{
+    list-style: none;
+  }
+  #p3{
+    margin-top: 20px;
+    width: 303px;
+height: 64px;
+  }
+#last_txt{
+    margin-top: 61px;
+    color: #ffffff53;
+}
+.h1{
+    color:#FBD784;
+}
+.col2{
+
+}

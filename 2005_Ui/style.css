@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    height: 500px;
+    background-color: red;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 84px;
+    font-weight: 900;
+
+}
+@keyframes newyear {
+    0%{position: relative;
+        top:20px;
+    }
+    20%{
+        display: block;
+        position: relative;
+        top: 40px;
+        color: rgb(53, 53, 53);
+    }
+    40%{position: relative;
+        top:80px;
+        color: rgb(91, 91, 91);
+    }
+    60%{position: relative;
+        top:120px;
+        color: rgb(134, 134, 134);
+    }
+    80%{position: relative;
+        top:160px;
+        color: rgb(195, 195, 195);
+    }
+    100%{
+        #four{
+            position: relative;
+        top:200px;
+        color: rgb(237, 237, 237);
+        }
+    }
+}
+#four{
+    position: relative;
+
+    animation-name: newyear;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    top: 900px;
+    
+}
+@keyframes five {
+    0%{position: absolute;
+        left:2200px;
+    }
+    40%{position: absolute;
+    left:1500px;
+        color: rgb(0, 0, 0);
+    }
+    80%{position: absolute;
+        left:1450px;
+        color: rgb(0, 0, 0);
+    }
+    100%{
+         position: fixed;
+        left: 1400px;
+        color: rgb(0, 0, 0);
+    }
+}
+#five{
+    position: absolute;
+    left: 2200px;
+    animation-name: five;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+}

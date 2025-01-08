@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.card1{
+width: 323px;
+height:888px;
+position: absolute;
+box-sizing: border-box;
+/* background-color: red; */
+top: 29px;
+left: 10.5px;
+padding: 50px 40px 50px 40px;
+gap: 35px;
+opacity: 0px;
+border: 1px solid black;
+
+}
+.free{
+    margin-top: 35px;
+    width: 64px;
+height: 32px;
+gap: 0px;
+opacity: 0px;
+font-size: 24px;
+font-weight: 700;
+}
+#temp{
+    width:76px;
+height:74px;
+/* background-color: rebeccapurple; */
+margin-top: 35px;
+gap: 0px;
+opacity: 0px;
+
+}
+#feature{
+
+    width: 203px;
+height: 48px;
+    font-size: 14px;
+    font-weight: 700;
+}
+#price{
+    width: 68px;
+height: 50px;
+gap: 0px;
+opacity: 0px;
+
+font-size: 40px;
+font-weight: 700;
+
+}
+#valid{
+    width: 76px;
+height: 24px;
+gap: 0px;
+opacity: 0px;
+
+font-size: 14px;
+font-weight: 700;
+
+}
+#f-txt{
+    margin-top: 35px;
+    width: 204px;
+height: 40px;
+gap: 0px;
+opacity: 0px;
+
+font-size: 14px;
+font-weight: 400;
+}
+#card1-btn{
+    margin-top: 35px;
+    width:243px;
+height:52px;
+padding: 15px 40px 15px 40px;
+gap: 10px;
+border-radius: 5px;
+opacity: 0px;
+
+}
+#facility1{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    /* background-color: yellow; */
+}
+#facility-txt{
+    width: 201px;
+height: 24px;
+font-size: 14px;
+font-weight: 700;
+align-self: center;
+
+}
+.allFacility{
+    width: 243px;
+height: 236px;
+opacity: 0px;
+/* background-color: green; */
+margin-top: 35px;
+}
