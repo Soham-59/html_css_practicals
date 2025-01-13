@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to_do_list</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="page">
+        <div id="box1">
+            <div class="input_field">
+                <input type="text" id="task" placeholder="tasks...">
+            </div>
+            <div class="add_task">
+                <button id="add">Add Task</button>
+            </div>
+            <div class="delete_task">
+                <button id="delete">Delete Task</button>
+            </div>
+
+        </div>
+
+        <!-- storing tasks -->
+         <h3 id="h3_1">Show Tasks</h3>
+         <ul id="store">
+
+         </ul>
+    </div>
+    <script>
+        let task=document.getElementById("task");
+
+        // function to add task
+        let add_btn=document.getElementById("add");
+        let store_task=document.getElementById("store");
+        add_btn.addEventListener('click',function addTask(){
+            if(task.value===''){
+
+            }
+            else{
+                let listelement=document.createElement("li");
+                listelement.textContent=task.value;
+                store_task.appendChild(listelement);
+                task.value="";
+
+            }
+        });
+
+        //function to delete last task
+        let delete_btn=document.getElementById("delete");
+
+        delete_btn.addEventListener('click',function delTask(){
+            store_task.removeChild(store_task.lastChild);
+        });
+
+    </script>
+</body>
+</html>

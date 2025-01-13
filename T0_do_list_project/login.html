@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="page">
+        
+        <div class="auth">
+            <div class="head">
+                <h1 id="header">Login</h1>
+            </div>
+            <div class="inputbox">
+                <label for="username">Username:</label>
+                <input id="username" type="text">
+            </div>
+            <div class="password_box">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="login-btn">
+                <button id="lg-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- script tag -->
+     <script>
+        let username=document.getElementById("username");
+        let password=document.getElementById("password");
+        let btn=document.getElementById("lg-btn");
+
+        btn.addEventListener('click',function auth(){
+            if(username.value==='codex'){
+                if(password.value==='codex321'){
+                    
+                    alert("login Successfully"+`${username.value}`);
+                    username.value="";
+                    password.value="";
+                    window.location.href="add_task.html";
+                }
+                else{
+                    if(password.value==='codex123'){
+                        alert("login Successfully "+`${ username.value}`);
+                        username.value="";
+                    password.value="";
+                    // imp point window.location.herf to replace
+                    window.location.href="add_task.html";
+                        
+                    }
+                }
+            }
+            else{
+                alert("Wrong Information! please enter correct information ");
+                username.value="";
+                password.value="";
+            }
+        });
+
+     </script>
+</body>
+</html>

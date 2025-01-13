@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_List_Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+
+        <div class="first">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="codex-logo-vector.png" width="150px" height="50px" alt="">
+                </div>
+                <div class="navitems">
+                    <ul class="ul1">
+                        <li class="li1"> <a href="login.html">Login</a></li>
+                        <li class="li1"> <a href="#">Contact Us</a></li>
+                        <li class="li1"> <a href="#">Home</a></li>
+                    </ul>
+                </div>
+                <div class="navbtn">
+                    <button id="btn1">Login</button>
+                </div>
+            </div>
+            
+            <h1 id="h1_1">Welcome to To-Do List Application!</h1>
+            <div id="bg-img">
+                <img id="todo" src="bg-img.jpg" height="400px" width="500px" alt="" >
+
+            </div>
+        </div>
+
+    </div>
+    <!-- parent div -->
+     <script>
+        let btn=document.getElementById("btn1");
+        btn.addEventListener('click',function login(){
+            window.location.href="login.html";
+        });
+     </script>
+</body>
+</html>

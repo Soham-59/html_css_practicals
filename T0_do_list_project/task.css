@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.page{
+color: white;
+background-color: black;
+width: 100vw;
+box-sizing: border-box;
+padding: 150px 150px;
+height: 100vh;
+}
+#box1{
+    display: flex;
+    gap: 50px;
+    justify-content:center;
+    align-items: center;
+}
+#task{
+    width: 50vw;
+    height: 10vh;
+    border-style: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    border-top: 1px solid aqua;
+    border-bottom: 1px solid rgb(41, 194, 250);
+    border-left: 1px solid  aqua;
+    border-right: 1px solid rgb(41, 194, 250);
+    border-radius: 10px;
+}
+#add{
+    padding: 15px 50px;
+    background-color: rgb(58, 247, 130);
+    border-style: none;
+    border-radius: 5px;
+}
+#delete{
+    padding: 15px 50px;
+    background-color: rgb(245, 82, 82);
+    border-style: none;
+    border-radius: 5px;
+}
+#store{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    font-size: 20px;
+}
+#h3_1{
+    margin-top: 100px;
+}
