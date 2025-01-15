@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- parent div -->
+     <div class="parent">
+        <div class="box">
+            <div class="input-box">
+                <input type="text" id="city" placeholder="enter city...">
+                <div class="search">
+                    <svg id="search" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+                </div>
+            </div>
+            <div id="weather_img">
+                
+            </div>
+            <div id="temperature">
+                <h1 id="h1_temp"></h1>
+            </div>
+            <h2 id="Entered_city">
+                City
+                <h4 id="country">Country</h4>
+            </h2>
+            
+
+            <div class="box2">
+                <div class="humidity">
+                    <img id="hum_img" src="cloud.png" height="50px" width="50px" alt="">
+                    <div class="hum2">
+                        <h3 id="humidity"></h3>
+                        <p>Humidity</p>
+    
+                    </div>
+                </div>
+    
+                <div class="wind">
+                    <img id="wind_img" src="windy.png" height="50px" width="50px" alt="">
+                    <div class="wind2">
+                        <h3 id="wind_speed"></h3>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+     <!-- html ends here -->
+      <!-- js started -->
+       <script>
+
+        let country=document.getElementById("country");
+        let w_img=document.getElementById("weather_img");
+
+        let default_hum=document.getElementById("humidity");
+        let default_wind=document.getElementById("wind_speed");
+        let forecast_city=document.getElementById("Entered_city");
+        let tempreature=document.getElementById("h1_temp");
+        let city=document.getElementById("city");
+        let search=document.getElementById("search");
+
+        search.addEventListener('click',function fun(){
+            console.log(city.value);
+
+            let url=`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&APPID=2464ca3c190b3d758ced671ef650b4df`
+            let p=fetch(url)
+            p.then((response)=>{
+                console.log(response.status);
+                console.log(response.ok);
+                return response.json()
+            }).then((city_data)=>{
+                console.log(city_data)
+
+
+                let celcius=city_data.main['temp']-273.15
+                console.log(celcius+"deg")
+                let new_temp=Math.floor(celcius)
+                console.log(new_temp)
+                let city_name=city_data.name
+                console.log(city_name);
+                let city_hum=city_data.main['humidity']
+                console.log(city_hum+"%")
+                let wind_speed=city_data.wind['speed']
+                console.log(wind_speed+'km/h')
+                
+
+                // dom manipulation
+
+                // change after some time
+
+                if(new_temp<0){
+                   w_img.style.backgroundImage="cloudy.png"
+                      // change tempreature
+                tempreature.innerText= new_temp+"deg"
+
+                }
+                else{
+                    // change tempreature
+                tempreature.innerText= new_temp+"deg"
+                }
+                
+                // change country
+
+                country.innerText=city_data.sys['country']
+
+                // change city name
+                forecast_city.innerText=city_name
+
+                // change humidity
+                default_hum.innerText=city_hum+"%"
+
+                //change wind speed
+
+                default_wind.innerText=wind_speed+'km/h'
+
+                city.value="";
+
+            })
+        })
+        
+        // fetch weather api
+       </script>
+</body>
+</html>

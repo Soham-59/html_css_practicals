@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    background-color: black;
+    -webkit-backdrop-filter: blur(1000px);
+    backdrop-filter: blur(1000px);
+    height: 100vh;
+    padding: 50px 100px;
+   
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+#city{
+    padding-left: 10px;
+    width: 25vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid rgb(145, 202, 255); 
+    margin-right: 20px;
+}
+#city:hover{
+    background-color: rgb(248, 248, 248);
+}
+#search{
+    background-color: white;
+    height: 5vh;
+    width: 3vw;
+    border-radius: 20px;
+}
+#search:hover{
+    background-color: rgb(207, 201, 201);
+}
+.box{
+    background: linear-gradient(to bottom,rgb(48, 231, 158),rgb(37, 153, 255));
+    padding: 100px 70px;
+    border: 8px solid rgb(145, 202, 255);
+    width:25vw;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
+    -webkit-backdrop-filter: blur(300px);
+    backdrop-filter: blur(300px);
+    border-radius: 30px;
+    
+}
+.box:hover{
+    transition: all 2s;
+    transform: scale(1.1,1.1);
+}
+#weather_img{
+    display: flex;
+    align-self: center;
+    background-image: url("sun.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+#h1_temp{
+    display: flex;
+    justify-content: center;
+}
+.humidity{
+    display: flex;
+    align-items: center;
+}
+.wind{
+    display: flex;
+    align-items: center;
+}
+.box2{
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: space-between;
+}
+#Entered_city{
+    /* background-color: yellow; */
+    align-self: center;
+}
+#country{
+    align-self: center;
+}
+
+@media (max-width:480px) {
+    .parent{
+     padding: 0px 0px;
+    }
+    .box{
+        padding:50px 100px;
+        align-items: center;
+    }
+    .input-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #search{
+        background-color: white;
+        height: 5vh;
+        width: 7vw;
+        border-radius: 20px;
+    }
+    .box2{
+        display: flex;
+        gap: 20px;
+        /* background-color: yellow; */
+        justify-content: center;
+    }
+    #city{
+        width: 30vw;
+        background-color: black;
+        
+    }
+    .box:hover{
+        transition: all 2s;
+        transform: scale(1,1);
+    }
+}
