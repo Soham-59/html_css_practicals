@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question App</title>
+</head>
+<body>
+    <div class="quest1">
+        <p>What is founder of java?</p>
+        
+        <input class="box1" type="radio" name="options" value="James Ghosling" id="ans1">
+        <label for="ans1">James Ghosling</label>
+        <br>
+        <input  class="box1" type="radio" name="options" value="Guido rossum" id="ans2">
+        <label for="ans2"> Guido rossum</label>
+        <br>
+        <input  class="box1" type="radio" name="options" value="soham Deshmukh" id="ans3">
+        <label for="ans3">Soham Deshmukh</label>
+        <br>
+        <input class="box1" type="radio" name="options" value="vishal pawar" id="ans4">
+        <label for="ans4">Vishal pawar</label>
+        <br>
+        <button id="btn">Submit</button>
+    </div>
+
+    <!-- scripts -->
+     <script>
+        let btn=document.getElementById("btn")
+        let marks=5;
+        let all_ans={
+            question1:"James Ghosling"
+        };
+        let ans1=document.getElementsByClassName("box1");
+        
+        btn.addEventListener('click',()=>{
+            
+            for(answers of ans1){
+                if(answers.checked){
+                    
+                let temp_data=answers.value
+                console.log(temp_data)
+                
+                    if(temp_data===all_ans.question1){
+                        console.log("Your answer is corrected"+" "+temp_data);
+                        marks++;
+                        alert(marks)
+                    }
+                
+                    
+                }
+            }
+        })
+        
+    
+     </script>
+</body>
+</html>

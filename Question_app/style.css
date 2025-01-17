@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.allquestions{
+    width: 30vw;
+    background-color: black;
+    padding: 50px 50px;
+    
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+    
+}
+input{
+    fill: red;
+}
+.quest1{
+    padding: 20px 30px;
+    
+    border-radius: 10px;
+    border-top: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+    border-right: 1px solid rgb(26, 181, 247);
+    border-left: 1px solid rgb(26, 181, 247);
+    background-color:black;
+    color: white;
+
+    width: 20vw;
+}
+#submit{
+    padding: 10px 30px;
+    border-style: none;
+    background-color:rgb(29, 79, 205);
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+}
+#submit:hover{
+    background-color: rgb(85, 127, 232);;
+}
+#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10{
+    
+    margin-bottom: 10px;
+}
+.ans1,.ans2,.ans3,.ans4,.ans5,.ans6,.ans7,.ans8,.ans9,.ans10{
+    margin-top: 5px;
+}
+#header{
+    color: rgb(87, 175, 247);
+    /* background-color: yellow;S */
+    text-align: center;
+}
+#marks{
+    color: white;
+}
+
+/* mediaquerry */
+@media (max-width:480px){
+    .allquestions{
+        width: 100vw;
+    }
+    #header{
+        width: 60vw;
+    }
+    .quest1{
+        width: 60vw;
+    }
+    .quest1:hover{
+        background-color: rgb(32, 31, 31);
+    }
+
+}
